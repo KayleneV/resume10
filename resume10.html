@@ -1,106 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang=en>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Digital Resume</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <link rel="stylesheet" href="stylehseet.css">
-      
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+
 </head>
 
-<body class="bg-light">
-  <body>
-  <div class="container p-5">
-    <div class="row">
-      <div class="col-lg-4 bg-dark text-white center py-4">
-        <div class="header-left">
-          <img src="images/PicsArt_12-07-07.06.46.jpg" alt="profilePhoto" class="img-thumbnail rounded-circle mb-2">
-          <h1 class="display-5">Kaylene Van Wyk</h1>
-          <h4 class="lead text-uppercase text-white-50 mb4"> Aspiring Web Developer</h4>
+<header class="header">
+    <h1>Registration Form</h1>
+</header>
+
+<body>
+
+        <form>
+            <div>
+                <div class="input">
+                    <div class="input"></div>
+                    </div>
+        </form>
+        <div class="input">
+            <label for=Firstname> User ID : </lable>
+                <input type="text" name="fistname" placeholder="Required length of 7 to 12 characters" required>
         </div>
+
+        <br>
+
+        <div class="input">
+            <label for="Password"> Password : </label>
+            <input type="text" name="Password" placeholder="Must contain letters and numbers" required>
+        </div>
+
+        <br>
+
+        <div class="input">
+            <label for="Firstname"> Firstname : </label>
+            <input type="Firstname" name="Firstname" id="Firstname" placeholder="Required length of 7 to 12 characters"
+                required>
+        </div>
+
+        <br>
+
+        <div class="input">
+            <label for="Lastname"> Lastname : </label>
+            <input type="text" name="name" id="lastname" placeholder="Required, letters only" required>
+        </div>
+
+        <br>
+
+
+        <div class="input">
+            <label for="Address"> Address : </label>
+            <input type="Address" name="Address" id="Address" placeholder="Optional" required>
+        </div>
+
+        <br>
+
+        <div class="input">
+            <label for="Country"> Country : </label>
+            <input type="Country" name="Country" id="Country" placeholder="Please select country" required>
+            <select name="Country" id="Country">
+                <option value="Please select a Country"></option>
+                <option value=" ">Afghanistan </option>
+                <option value=" "> Bahamas </option>
+                <option value=" "> Cameroon </option>
+                <option value=" "> Denmark </option>
+                <option value=" "> Egypt </option>
+                <option value=" "> Namibia </option>
+                <option value=" "> South Africa </option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="input">
+            <label for="Zip Code"> Zip Code : </label>
+            <input name="Zip Code" id="Zip Code" placeholder="Required, number only" required>
+        </div>
+        <br>
+
+        <div class="input">
+            <label for="tel"> Phone No. : </label>
+            <input type="tel" name="tel" id="tel" placeholder="Must be a valid number"
+                pattern="^(\s*)?([-_():=+]?\d[-_():=+]?){10,14}(\s*)?$" required>
+        </div>
+
+        <br>
+
+        <div class="input">
+            <label for="email"> Email : </label>
+            <input type="email" name="email" id="email" placeholder="Must be a valid email addres" required>
+        </div>
+
+        <br>
+
+        <div class="input">
+            <label for="Gender"> Gender : </label>
+            <input type="radio" name="Gender" id="Gender" value="Male" checked> Male
+            <input type="radio" name="Gender" value="Female" checked> Female
+        </div>
+
+        <br>
+
+        <div class="input">
+            <label for="Language"> Language :</label>
+            <select>
+                <option value="Please select Language"></option>
+                <option value=" "> English</option>
+                <option value=" "> Afrikaans </option>
+                <option value=" "> Xhosa </option>
+                <option value=" "> Zulu </option>
+                <option value=" "> Venda </option>
+                <option value=" "> Tsonga </option>
+                <option value=" "> Swati </option>
+                <option value=" "> Tswana </option>
+
+            </select>
+
+        </div>
+
+        <br>
 
         <div>
-          <h5 class="text-uppercase bg-white text-dark py-2 rounded-pill">contact</h5>
+            <label for="About"> About :</label>
 
-          <ul class="list-unstyled text-white-50 ml-5 py-2 text-left">
-            <li class="list-item">
-              <i class="fas fa-mobile-alt mx-4"></i>
-              +27639886760
-            </li>
-            <ul class="list-unstyled text-white-50 ml-5 py-2 text-left">
-              <li class="list-item">
-                <i class="fas fa-envelope-open-text mx-4"></i>
-                kvanwyk98@gmail.com
-              </li>
-            </ul>
-            <ul class="list-unstyled text-white-50 ml-5 py-2 text-left">
-              <li class="list-item">
-                <i class="fas fa-map-marker-alt mx-4"></i>
-                29 Shitaz Street, Paarl
-              </li>
-            </ul>
+            <br>
+
+            <input type="text" name="About" id="About" , style="width: 300px;height: 100px;" placeholder="Option">
+
         </div>
 
-        <div>
-          <h5 class="text-uppercase bg-white text-dark py-2 rounded-pill">skills</h5>
-          <ul class="list text-white-50 ml-5 py-2 text-left text-capitalize">
-            <li class="list-item">communicating skills </li>
-            <li class="list-item">problem solving skills </li>
-            <li class="list-item">learner management skills </li>
-          </ul>
-        </div>
-        <div>
-          <div>
-            <h5 class="text-uppercase bg-white text-dark py-2 rounded-pill">education</h5>
-            <ul class="list text-white-50 ml-5 py-2 text-left text-capitalize">
-              <li class="list-item">diploma in human resource management and practice support </li>
-              <li class="list-item">matric passed </li>
-              <li class="list-item">microsoft and excel </li>
-              <li class="list-item">certificate in foundation phase </li>
-              <li class="list-item">completed eyebrain gym course </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-8 bg-light text-dark py-4 px-5">
-        <div class="header-right">
-          <h4 class="text-uppercase">profile</h4>
-          <hr>
-          <p>I am a hard working person.I am a very dedicated individual with big goals and dreams.
-            I am a trustworthy person who is very reliable.I am an introvert but I do know how to work with well with
-            people.
-          </p>
+        <br>
+
+        <div class="input">
+            <input type="submit" name="submit" id="submit" placeholder="required">
         </div>
 
-        <div>
-          <h4 class="text-uppercase">profile</h4>
-          <hr>
-          <ul class="list">
-            <li class="list-item">
-              <h5 class="display-6 text-uppercase">medical secretary</h5>
-              <h6 class="text-uppercase text-black-50">dr fiona haai's surgary/ 2013-2014</h6>
-              <p>I collected patient data and ccapturing them. I also worked with a program called MediNol.</p>
-            </li>
-            <li class="list-item">
-              <h5 class="display-6 text-uppercase">waiter</h5>
-              <h6 class="text-uppercase text-black-50">domino's pizza/ 2017-2017</h6>
-              <p>I worked as a waiter and at front of house.</p>
-            </li>
-            <li class="list-item">
-              <h5 class="display-6 text-uppercase">facilitator</h5>
-              <h6 class="text-uppercase text-black-50">the click foundation/ 2017-cuurent</h6>
-              <p>Enriching children's English through online activities .</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
-  </div>
+        </form>
 
 </body>
 
