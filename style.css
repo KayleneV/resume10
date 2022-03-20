@@ -1,4 +1,4 @@
-/*=============basic code==========*/
+/*=============basic Code==========*/
 
 *{
     box-sizing: border-box;
@@ -19,7 +19,7 @@ body{
     background-color: #ffffff;
 }
 
-/*=========== Header section =========*/
+/*=========== header Section =========*/
 .about-img{
     margin-left: -100px;
     right: -60px;
@@ -35,4 +35,35 @@ body{
 .btn-blue{
     border: 2.4px solid #ffffff;
     color: #ffffff;
+}
+.hero-text{
+    margin-top: 150px;
+}
+.typed-cursor{
+    font-size: 45px;
+    color: #ffffff;
+}
+.position-absolute{
+    font-weight: 700;
+}
+
+/*================= navigation Menu =================*/
+a{
+    color: #0bceaf;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover{
+    color: #078571;
+    text-decoration: underline;
+}
+.navbar-light{
+    display: none;
+}
+.navbar-light .navbar-nav .nav-link{
+     padding: 25px 10px;
+     color: #343a40;
+     font-weight: 500;
+     outline: none;
+    
 }
