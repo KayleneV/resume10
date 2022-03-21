@@ -11,7 +11,7 @@
         }else{
             $('.navbar').fadeOut('slow').css('display', 'none');
         }
-    }
+    })
 
 
     //Typed Initiate
@@ -23,6 +23,18 @@
             backSpeed:20,
             smartBackspace:false,
             loop: true
-        });
+        }
+    }
+});
+//skill bar
+$('.skill').waypoint(function (){
+    $('.progress ..progress-bar').each(function (){
+        $(this).css("width", $(this).attr("aria-valuenow") + "%");
+    });
+},({offset: '80%'});
+
+
+
+
     }
 })(jQuery);
