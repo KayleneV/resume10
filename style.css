@@ -112,14 +112,57 @@ a:hover{
     font-weight: 700;
 }
 
-#slider{
-    overflow: hidden;
-}
-
-#slider.figure{
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
     position: relative;
-    width: 100%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  @keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+
+    img:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
