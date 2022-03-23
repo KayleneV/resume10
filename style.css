@@ -1,4 +1,4 @@
-/*=============basic Code==========*/
+/*=============basicCode*/
 
 *{
     box-sizing: border-box;
@@ -110,4 +110,16 @@ a:hover{
 }
 .position-absolute{
     font-weight: 700;
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider.figure{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
 }
