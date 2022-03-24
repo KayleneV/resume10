@@ -28,6 +28,30 @@
     <!--light-box cdn-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js">
 
+    <style>
+        .grid-container {
+          display: grid;
+          height: 400px;
+          align-content: center;
+          grid-template-columns: 500px 500px ;
+          gap: 10px;
+          background-color: #343a40;
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+        .gridHead{
+            align-content: center;
+            color: white;
+            margin: 2px;
+        }
+        </style>
+
 </head>
 
 <body>
@@ -248,17 +272,14 @@
     </div> <!--endExperience-->
 
     <!--grid-->
-    <div class="grid-container-fluid py-5" id="grid-container">
-        <div class="position-relative d-flex align-items-center justify-content-center">
-       <h1> Skills Obtained by CodeSpace Acadamy</h1>
-        <br>
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>GitHub</div>  
-        <div>Basic Coding</div>
+  <!-- Photo Grid -->
+<div class="row"> 
+    <div class="column">
+      <img src="images/css logo.png" style="width:100%">
+      <img src="images/github logo.png" style="width:100%">
+      <img src="images/png-transparent-logo-html-html5.png" style="width:100%">
     </div>
-    </div>
-
+    
   
         <!--contactMe-->
         <div class="container-fluid py-5" id="contact">
