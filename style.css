@@ -151,18 +151,25 @@ a:hover{
     right: 0;
   }
 
-  @keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
+  .grid-container {
+    display: grid;
+    height: 400px;
+    align-content: center;
+    grid-template-columns: 500px 500px;
+    gap: 10px;
+    background-color: #6c757d;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    display: flex;
+  }
+  
 
-    img:hover {
-        animation: shake 0.5s;
-        animation-iteration-count: infinite;
-    }
+ 
+    
+
